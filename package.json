@@ -1,0 +1,57 @@
+{
+  "name": "toll-plaza",
+  "version": "1.0.0",
+  "description": "Toll collection application",
+  "main": "index.js",
+  "scripts": {
+    "build": "preact build --src ./web/src",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/B-Pratik/toll-plaza.git"
+  },
+  "author": "Pratik Bhurewar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/B-Pratik/toll-plaza/issues"
+  },
+  "homepage": "https://github.com/B-Pratik/toll-plaza#readme",
+  "browserslist": [
+    "defaults"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "preact",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error"
+      ]
+    }
+  },
+  "eslintIgnore": [
+    "build/*"
+  ],
+  "dependencies": {
+    "express": "^4.17.1",
+    "preact": "^10.4.4",
+    "preact-cli": "^2.2.1",
+    "preact-render-to-string": "^5.1.9"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-preact": "^1.1.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "prettier": "^2.0.5"
+  }
+}
