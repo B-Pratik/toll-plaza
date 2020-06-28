@@ -1,12 +1,14 @@
+import { Fragment } from "preact";
+import Header from "./components/Header/Header";
+import Container from "./components/Container/Container";
 import "./style";
-import { Component } from "preact";
+import "preact-material-components/style.css";
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Hello, World!</h1>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <Fragment>
+    <Header />
+    <Container />
+  </Fragment>
+);
+
+export default App;

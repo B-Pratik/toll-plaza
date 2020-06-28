@@ -1,6 +1,12 @@
 const router = require("express").Router();
-const { verifyReceipt } = require("./transaction");
+const {
+  verifyReceipt,
+  verifyRequest,
+  addTransaction,
+  verifyId,
+} = require("./transaction");
 
-router.get("/verifyReceipt/:transactionId", verifyReceipt);
+router.get("/verifyReceipt/:transactionId", verifyId, verifyReceipt);
+router.post("/add", verifyRequest, addTransaction);
 
 module.exports = router;

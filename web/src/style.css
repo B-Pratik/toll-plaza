@@ -1,8 +1,21 @@
-html, body {
-	font: 14px/1.21 'Helvetica Neue', arial, sans-serif;
-	font-weight: 400;
-}
+* {
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-kerning: auto;
+  }
+  
+  html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+  }
+  
+  body {
+	margin: 0;
+	line-height: 1;
+  }
 
-h1 {
-	text-align: center;
-}
+  label {
+	  font-size: 15px;
+  }
