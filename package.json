@@ -38,7 +38,10 @@
     "build/*"
   ],
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "mongoose": "^5.9.20",
     "preact": "^10.4.4",
     "preact-cli": "^2.2.1",
     "preact-render-to-string": "^5.1.9"
